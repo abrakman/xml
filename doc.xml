@@ -1,0 +1,7 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<xsd:complexType name="Foo">
+</xsd:complexType>
+<xsd:complexType name="Document">
+<xsd:sequence>
+	<xsd:element name="foo" type="Foo"/>
+	</>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title font="" size="" color="" location=""></title>
+<axes>
+	<x_axis>
+	<title>
+	<text><![CDATA[xlab]]></text>
+	<font bold="Yes" size="" color=""/>
+	</title>
+	</x_axis>
+	<y_axis position = "Opposite">
+	<title align = "Near">
+	<text><<![CDATA[ylab]]></text>
+	<font bold="Yes" size="" color=""/>
+	</title>
+	</y_axis>
+	</axes>
+<plot>
+
+<array name="points">
+<item>50,100</item>
+<item>100,40</item>
+<item>240,160</item>
+</array>
+</plot>

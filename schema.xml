@@ -1,0 +1,28 @@
+
+	
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd: complexType name="VariableType">
+	<xsd:sequence>
+	<xsd:element name="Value" type="xsd:int"/>
+	</xsd:sequence>
+	<xsd:attribute name="Impl" type="xsd:string"/>
+	</xsd:complexType>
+
+<jaxb:bindings schemaLocation="signal.xsd" node="/xsd:schema">
+<jaxb:schemaBindings>
+<jaxb:package name="signal"/>
+</jaxb:schemaBindings>
+<jaxb:bindings node="//xsd:complexType[@name='VariableType']">
+	<jaxb:bindings node="./xsd:attribute[@name='Impl']">
+	<jaxb:property>
+	<jaxb:baseType>
+	<jaxb:javaType name="impl.ImplType"
+		parseMethod="impl.ImplConv.parseStringToEnum"
+		printMethod="impl.ImplConv.printEnumToString"/>
+	</jaxb:baseType>
+	</jaxb:property>
+	</jaxb:bindings>
+	</jaxb:bindings>
+	</jaxb:bindings>
+	</jaxb:bindings>
